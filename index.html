@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculation</title>
+</head>
+<body>
+    <h1>CPIT-405 Lab 5 </h1>
+    <h2> Calculate Factorial Function</h2>
+    <p>Enter the number:</p>
+    <input type="number" id="numInput">
+    <button onclick="calculateFactorial()">Calculate</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateFactorial() {
+          const num = document.getElementById("numInput").value;
+          const result = factorial(num);
+          document.getElementById("result").innerHTML = `The factorial of ${num} is ${result}.`;
+        }
+      </script>
+</body>
+<script src="script.js"></script>
+</html>
